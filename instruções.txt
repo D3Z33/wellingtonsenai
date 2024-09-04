@@ -1,0 +1,22 @@
+//  No Kali:
+
+//Criar o diretório:
+mkdir -p /var/www/html/phishing-simulation
+
+//Copiar os arquivos para pasta
+cp index.html capture.php /var/www/html/phishing-simulation/
+
+//Ir para o diretório
+cd /var/www/html/phishing-simulation/
+
+//Serviço PHP, iniciar na porta 8000:
+php -S 0.0.0.0:8000
+
+
+Link: <IP_KALI:8000> = http://10.0.3.15:8000
+
+//Monitorar em tempo real
+tail -f /var/www/html/phishing-simulation/creds.txt
+
+//Onde está os arquivos
+cat /var/www/html/creds.txt
