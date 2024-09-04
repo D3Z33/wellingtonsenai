@@ -1,5 +1,12 @@
 //  No Kali:
 
+//Certificar do Apache
+apt-get install apache2
+
+//Verificar status do apache2
+systemctl start apache2
+systemctl enable apache2
+
 //Criar o diretório:
 mkdir -p /var/www/html/phishing-simulation
 
@@ -12,6 +19,8 @@ cd /var/www/html/phishing-simulation/
 //Serviço PHP, iniciar na porta 8000:
 php -S 0.0.0.0:8000
 
+//Garantir burlar o firewall
+ufw allow 8000/php
 
 Link: <IP_KALI:8000> = http://10.0.3.15:8000
 
@@ -19,4 +28,25 @@ Link: <IP_KALI:8000> = http://10.0.3.15:8000
 tail -f /var/www/html/phishing-simulation/creds.txt
 
 //Onde está os arquivos
-cat /var/www/html/creds.txt
+cat /var/www/html/phishing-simulation/creds.txt
+
+
+
+//Range de IP's
+Meu: 10.0.3.15
+Demais: 10.0.3.16 ->>>
+
+//SubNet Mask
+255.255.255.0
+
+//Gateway Padrão
+10.0.3.15 (Meu)
+
+//DNS Server
+8.8.8.8
+
+//Testar no CMD
+ping '10.0.3.15 -> Minha máquina
+
+//Página alocada
+http://10.0.3.15:8000
