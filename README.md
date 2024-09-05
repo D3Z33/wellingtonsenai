@@ -28,8 +28,6 @@ phishing-simulation/
 ├── styles.css            # Folha de estilos que define o visual futurista da página
 └── creds.txt             # Arquivo onde os dados dos usuários são armazenados
 ````
-##
-
 
 ## 🛠️ Funcionalidades do Projeto
 Formulário de Registro Interativo:
