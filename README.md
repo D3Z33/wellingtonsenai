@@ -1,37 +1,12 @@
 🚀 Projeto de Simulação de Phishing Futurista
-📂 Estrutura e Tecnologias
-Este projeto tem como objetivo simular uma página de login com um estilo futurista, repleto de interatividade e efeitos visuais. Ele foi desenvolvido com as seguintes tecnologias:
+🛠️ Tecnologias Utilizadas
+<div align="center">
 
-HTML5: para estruturar a página e o formulário de registro.
-CSS3: para estilizar e criar efeitos dinâmicos e futuristas, com foco em uma estética hacker/cyberpunk.
-JavaScript (Vanilla): para adicionar interatividade, como o efeito de explosão ao clicar no botão de registrar.
-PHP: para capturar e armazenar os dados dos usuários, como nome de usuário, senha, IP e agente do navegador.
-Shell (Linux): para configurar o ambiente de servidor e monitorar os dados capturados em tempo real.
-💻 Acesse o Projeto
-Clique aqui para acessar a página do projeto!
+</div>
+Este projeto simula uma página de login com um estilo futurista e interativo, onde utilizamos uma combinação de tecnologias para proporcionar uma experiência cyberpunk/hacker. Com animações, interatividade e um efeito especial ao clicar no botão de registrar, o projeto captura as credenciais do usuário de maneira intuitiva.
 
-Você verá uma interface de criação de conta interativa e estilizada. Ao preencher o formulário e clicar em "Registrar", o botão irá desaparecer em uma "explosão digital" e uma mensagem confirmará o sucesso da ação.
-
-🛠️ Funcionalidades do Projeto
-Formulário de Registro Interativo:
-
-Coleta informações como nome de usuário, senha e confirmação de senha.
-O botão "Registrar" explode ao ser clicado, criando uma experiência visual única.
-Mensagem de confirmação exibida após a explosão, indicando sucesso no registro.
-Captação de Dados do Usuário:
-
-Coleta do endereço IP do usuário que acessa a página.
-Captura do User-Agent, que fornece informações sobre o navegador e sistema operacional utilizado.
-Efeitos Visuais e Interativos:
-
-Botões estilizados com efeitos de hover e animações de clique.
-Feedback visual com pop-ups estilizados após o envio do formulário.
-Monitoramento em Tempo Real:
-
-Os dados inseridos são armazenados em um arquivo creds.txt no servidor.
-O administrador pode monitorar esses dados em tempo real diretamente no terminal Linux.
-🧱 Estrutura do Projeto
-Aqui está uma visão geral da estrutura de arquivos do projeto:
+📋 Estrutura do Projeto
+A estrutura do projeto é simples, mas eficiente, permitindo a captura de dados e um layout visual impactante.
 
 bash
 Copiar código
@@ -41,41 +16,31 @@ phishing-simulation/
 ├── capture.php           # Script PHP que captura os dados do formulário
 ├── styles.css            # Folha de estilos que define o visual futurista da página
 └── creds.txt             # Arquivo onde os dados dos usuários são armazenados
-📋 Descrição dos Arquivos
-index.html: Página de login onde o usuário insere suas credenciais. Contém o formulário de registro, e usa JavaScript para interações dinâmicas.
-capture.php: Script responsável por capturar e armazenar as credenciais inseridas, bem como o IP e o user-agent do usuário.
-styles.css: Folha de estilo que define o visual cyberpunk da página, com cores escuras (preto, verde e vermelho) e efeitos de hover e explosão.
-creds.txt: Arquivo gerado automaticamente onde as credenciais dos usuários são registradas.
 🌐 Como Funciona?
-Aqui está o fluxo completo de como a página interage com o usuário:
+O usuário acessa a página e insere as informações de nome de usuário, senha e confirmação de senha.
+Ao clicar no botão "Registrar", o botão explode com um efeito visual e uma mensagem de sucesso é exibida.
+As credenciais são enviadas ao servidor onde são capturadas pelo script PHP.
+O administrador pode monitorar as credenciais capturadas em tempo real no terminal.
+🎨 Estilo Visual e Temática
+A página foi desenvolvida com uma estética hacker/cyberpunk, utilizando:
 
-O usuário acessa a página principal no link fornecido.
+Cores: Preto, verde neon e vermelho, dando um toque de "terminal".
+Fontes: Estilo de terminal (Courier New) para intensificar o visual hacker.
+Animações: Efeitos de hover nos botões e explosão visual ao clicar em "Registrar".
+🧭 Como Rodar o Projeto Localmente
+Siga os passos abaixo para configurar o projeto em sua máquina:
 
-Ele preenche o formulário com nome de usuário, senha e confirmação de senha.
-
-Ao clicar no botão "Registrar", o botão explode com uma animação de escala e opacidade.
-
-Um pop-up futurista aparece informando que o registro foi bem-sucedido.
-
-Os dados são enviados para o arquivo PHP (capture.php), que:
-
-Captura e armazena o nome de usuário, senha, IP e agente do navegador.
-Armazena essas informações no arquivo creds.txt.
-O administrador pode monitorar em tempo real os dados que estão sendo inseridos via terminal Linux.
-
-🚀 Como Executar o Projeto Localmente
-🔧 Pré-requisitos
-Para rodar o projeto localmente, você precisará de:
-
-Servidor Apache e PHP: Para hospedar o projeto.
-Acesso ao terminal (Linux ou similar): Para monitorar os dados capturados e iniciar o servidor PHP.
-Passos para Configurar:
-Instalar o Apache:
+Pré-requisitos
+Servidor Apache2
+PHP 7.x ou superior
+Sistema operacional baseado em Linux
+Passo a Passo
+Instalar o Apache2:
 
 bash
 Copiar código
 sudo apt-get install apache2
-Iniciar o Servidor Apache:
+Iniciar o servidor Apache:
 
 bash
 Copiar código
@@ -86,17 +51,17 @@ Instalar PHP:
 bash
 Copiar código
 sudo apt-get install php
-Copiar os Arquivos para o Diretório do Servidor:
+Clonar o repositório:
+
+bash
+Copiar código
+git clone https://github.com/seu-repositorio/phishing-simulation.git
+Copiar os arquivos para o diretório do Apache:
 
 bash
 Copiar código
 sudo cp index.html capture.php styles.css /var/www/html/phishing-simulation/
-Navegar até o Diretório do Projeto:
-
-bash
-Copiar código
-cd /var/www/html/phishing-simulation/
-Iniciar o Servidor PHP na Porta 8000:
+Iniciar o servidor PHP na porta 8000:
 
 bash
 Copiar código
@@ -106,19 +71,14 @@ Acessar o projeto no navegador:
 arduino
 Copiar código
 http://10.0.3.15:8000
-🔍 Monitorar os Dados Capturados:
-Após iniciar o servidor e os usuários acessarem o site, você pode monitorar as credenciais inseridas em tempo real com o seguinte comando:
+📡 Monitoramento em Tempo Real
+Para monitorar as credenciais capturadas em tempo real, use o comando abaixo:
 
 bash
 Copiar código
 sudo tail -f /var/www/html/phishing-simulation/creds.txt
-🎨 Estilo Visual
-A estética do projeto segue um tema hacker/cyberpunk, com as seguintes características:
+Isso permitirá que você veja todas as inserções de dados dos usuários conforme elas acontecem.
 
-Fundo preto para remeter a ambientes de terminal.
-Textos verdes e vermelhos, que são cores frequentemente associadas a ambientes de hacking.
-Fontes no estilo de terminal, utilizando Courier New para criar uma experiência mais autêntica.
-Interatividade e efeitos visuais: Os botões mudam de cor, explodem ao serem clicados, e pop-ups confirmam as ações do usuário.
 📜 Licença
-Este projeto foi desenvolvido para fins educacionais e de simulação. É livre para ser utilizado, modificado e distribuído para fins educativos e não maliciosos.
+Este projeto é de livre uso para fins educacionais e não deve ser utilizado para atividades maliciosas.
 
