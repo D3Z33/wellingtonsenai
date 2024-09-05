@@ -60,7 +60,7 @@ phishing-simulation/
 └── creds.txt             # Arquivo onde os dados dos usuários são armazenados
 ```
 
-##📋 Descrição dos Arquivos
+## 📋 Descrição dos Arquivos
 
 index.html: Página de login onde o usuário insere suas credenciais. Contém o formulário de registro, e usa JavaScript para interações dinâmicas.
 
