@@ -122,7 +122,6 @@ sudo cp index.html capture.php styles.css /var/www/html/phishing-simulation/
 
 5. Navegar até o Diretório do Projeto:
 ```bash
-Copiar código
 cd /var/www/html/phishing-simulation/
 Iniciar o Servidor PHP na Porta 8000:
 ```
