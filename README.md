@@ -153,6 +153,13 @@ Fontes no estilo de terminal, utilizando Courier New para criar uma experiência
 Interatividade e efeitos visuais: Os botões mudam de cor, explodem ao serem clicados, e pop-ups confirmam as ações do usuário.
 
 
-📜 Licença
+## 📜 Licença
 Este projeto foi desenvolvido para fins educacionais e de simulação. É livre para ser utilizado, modificado e distribuído para fins educativos e não maliciosos.
+
+## 🛡️ Precauções de Segurança
+
+Simulação em Ambiente Seguro: Reforce que o teste seja realizado em um ambiente seguro, como uma máquina virtual isolada, para evitar danos ao sistema principal.
+Nunca Execute em Produção: Este projeto é para fins educativos e não deve ser executado em ambientes críticos.
+
+## 💻 com ❤️ por [D3Z33] 🧑‍💻
 
