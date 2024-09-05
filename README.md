@@ -110,6 +110,49 @@ sudo systemctl start apache2
 sudo systemctl enable apache2
 ```
 
+3. Instalar PHP:
+```bash
+sudo apt-get install php
+```
+
+4. Copiar os Arquivos para o Diretório do Servidor:
+```bash
+sudo cp index.html capture.php styles.css /var/www/html/phishing-simulation/
+```
+
+5. Navegar até o Diretório do Projeto:
+```bash
+Copiar código
+cd /var/www/html/phishing-simulation/
+Iniciar o Servidor PHP na Porta 8000:
+```
+
+6. Iniciar o Servidor PHP na Porta 8000:
+```bash
+php -S 0.0.0.0:8000
+```
+
+7. Acessar o projeto no navegador:
+```bash
+http://10.0.3.15:8000 (IP_KALI_SEU)
+```
+
+## 📡 Monitoramento em Tempo Real:
+
+Após iniciar o servidor e os usuários acessarem o site, você pode monitorar as credenciais inseridas em tempo real com o seguinte comando:
+```bash
+sudo tail -f /var/www/html/phishing-simulation/creds.txt
+```
+
+## 🎨 Estilo Visual
+ A estética do projeto segue um tema hacker/cyberpunk, com as seguintes características:
+
+Fundo preto para remeter a ambientes de terminal.
+Textos verdes e vermelhos, que são cores frequentemente associadas a ambientes de hacking.
+Fontes no estilo de terminal, utilizando Courier New para criar uma experiência mais autêntica.
+Interatividade e efeitos visuais: Os botões mudam de cor, explodem ao serem clicados, e pop-ups confirmam as ações do usuário.
 
 
+📜 Licença
+Este projeto foi desenvolvido para fins educacionais e de simulação. É livre para ser utilizado, modificado e distribuído para fins educativos e não maliciosos.
 
