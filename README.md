@@ -62,13 +62,13 @@ phishing-simulation/
 
 ## 📋 Descrição dos Arquivos
 
-index.html: Página de login onde o usuário insere suas credenciais. Contém o formulário de registro, e usa JavaScript para interações dinâmicas.
+**index.html:** Página de login onde o usuário insere suas credenciais. Contém o formulário de registro, e usa JavaScript para interações dinâmicas.
 
-capture.php: Script responsável por capturar e armazenar as credenciais inseridas, bem como o IP e o user-agent do usuário.
+**capture.php:** Script responsável por capturar e armazenar as credenciais inseridas, bem como o IP e o user-agent do usuário.
 
-styles.css: Folha de estilo que define o visual cyberpunk da página, com cores escuras (preto, verde e vermelho) e efeitos de hover e explosão.
+**styles.css:** Folha de estilo que define o visual cyberpunk da página, com cores escuras (preto, verde e vermelho) e efeitos de hover e explosão.
 
-creds.txt: Arquivo gerado automaticamente onde as credenciais dos usuários são registradas.
+**creds.txt:** Arquivo gerado automaticamente onde as credenciais dos usuários são registradas.
 
 
 ## 🌐 Como Funciona?
